@@ -9,7 +9,7 @@
         }],
         "properties": {
             "id": "section1",
-            "label": "Section"
+            "label": "not a Section"
         }
     }],
     "properties": {
