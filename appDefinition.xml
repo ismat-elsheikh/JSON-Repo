@@ -13,29 +13,6 @@
                <packageActivityForm>
                   <processDefId>process2</processDefId>
                   <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>exercise1::viewForm</string>
-               <packageActivityForm>
-                  <processDefId>exercise1</processDefId>
-                  <activityDefId>viewForm</activityDefId>
-                  <formId>exercise1Form</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>process4::activity1</string>
-               <packageActivityForm>
-                  <processDefId>process4</processDefId>
-                  <activityDefId>activity1</activityDefId>
-                  <formId>jsonBinder</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -46,7 +23,6 @@
                <packageActivityForm>
                   <processDefId>process1</processDefId>
                   <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -57,7 +33,6 @@
                <packageActivityForm>
                   <processDefId>process3</processDefId>
                   <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -75,28 +50,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>process4::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>process4</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>exercise1::activity1</string>
-               <packageActivityForm>
-                  <processDefId>exercise1</processDefId>
-                  <activityDefId>activity1</activityDefId>
-                  <formId>exercise1Form</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>process2::activity0</string>
                <packageActivityForm>
                   <processDefId>process2</processDefId>
@@ -107,55 +60,8 @@
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
-            <entry>
-               <string>exercise1::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>exercise1</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
          </packageActivityFormMap>
          <packageActivityPluginMap>
-            <entry>
-               <string>exercise1::tool1</string>
-               <packageActivityPlugin>
-                  <processDefId>exercise1</processDefId>
-                  <activityDefId>tool1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.JsonTool&quot;,&quot;properties&quot;:{&quot;headers&quot;:[],&quot;fieldMapping&quot;:[{&quot;jsonObjectName&quot;:&quot;symbol&quot;,&quot;field&quot;:&quot;name&quot;},{&quot;jsonObjectName&quot;:&quot;price&quot;,&quot;field&quot;:&quot;price&quot;}],&quot;requestType&quot;:&quot;&quot;,&quot;jsonUrl&quot;:&quot;https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT&quot;,&quot;formDefId&quot;:&quot;exercise1Form&quot;,&quot;multirowBaseObject&quot;:&quot;ticker&quot;,&quot;wfVariableMapping&quot;:[],&quot;debugMode&quot;:&quot;true&quot;,&quot;noResponse&quot;:&quot;&quot;}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>exercise1::tool2</string>
-               <packageActivityPlugin>
-                  <processDefId>exercise1</processDefId>
-                  <activityDefId>tool2</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>process3::tool1</string>
-               <packageActivityPlugin>
-                  <processDefId>process3</processDefId>
-                  <activityDefId>tool1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>process4::tool1</string>
-               <packageActivityPlugin>
-                  <processDefId>process4</processDefId>
-                  <activityDefId>tool1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.JsonTool&quot;,&quot;properties&quot;:{&quot;headers&quot;:[],&quot;fieldMapping&quot;:[{&quot;jsonObjectName&quot;:&quot;symbol&quot;,&quot;field&quot;:&quot;name&quot;},{&quot;jsonObjectName&quot;:&quot;price&quot;,&quot;field&quot;:&quot;price&quot;}],&quot;requestType&quot;:&quot;&quot;,&quot;jsonUrl&quot;:&quot;https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT&quot;,&quot;formDefId&quot;:&quot;jsonBinder&quot;,&quot;multirowBaseObject&quot;:&quot;&quot;,&quot;wfVariableMapping&quot;:[],&quot;debugMode&quot;:&quot;true&quot;,&quot;noResponse&quot;:&quot;&quot;}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
             <entry>
                <string>process1::tool0</string>
                <packageActivityPlugin>
@@ -195,27 +101,9 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>exercise1::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>exercise1</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>process3::processStartWhiteList</string>
                <packageParticipant>
                   <processDefId>process3</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process4::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>process4</processDefId>
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>adminUser</value>
@@ -242,5 +130,4 @@
       </appResource>
    </resourceList>
    <license>Wfh+ZsqrklVgAsQmMjUfb1u5qnjIktLzf2RkcmvK5201eEjI9kSm61YvlINYs0lw23BI2QJu/9w=</license>
-   <description></description>
 </appDefinition>
