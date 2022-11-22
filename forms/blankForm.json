@@ -43,7 +43,7 @@
         }],
         "properties": {
             "id": "section1",
-            "label": "testing git"
+            "label": "testing git without pull"
         }
     }],
     "properties": {
