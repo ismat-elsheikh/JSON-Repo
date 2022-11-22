@@ -1,16 +1,23 @@
 <appDefinition>
-   <appId>jsonfob</appId>
    <id>jsonfob</id>
    <version></version>
-   <name>JSON API Demo</name>
+   <name>JSON API DX8 Demo App</name>
    <packageDefinitionList/>
    <formDefinitionList/>
    <userviewDefinitionList/>
    <datalistDefinitionList/>
    <builderDefinitionList/>
    <pluginDefaultPropertiesList/>
-   <environmentVariableList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>AppName</id>
+         <appId>jsonfob</appId>
+         <appVersion>1</appVersion>
+         <value>JSON Form Options App</value>
+      </environmentVariable>
+   </environmentVariableList>
    <messageList/>
    <resourceList/>
-   <license>1i44Neuka7RRu+22/jBpdqFp/tdq4ijmTtjtQIzB0iiChu98G79hNHSaJF+QK4EE</license>
+   <license>Wfh+ZsqrklVgAsQmMjUfb1u5qnjIktLzf2RkcmvK5201eEjI9kSm61YvlINYs0lw23BI2QJu/9w=</license>
+   <description></description>
 </appDefinition>
