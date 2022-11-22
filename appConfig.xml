@@ -12,6 +12,7 @@
       <environmentVariable>
          <id>testVariable</id>
          <appId>jsonfob</appId>
+         <appVersion>2</appVersion>
          <value>&quot;hello world&quot;</value>
       </environmentVariable>
    </environmentVariableList>
