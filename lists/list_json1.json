@@ -1,0 +1,36 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "json1"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "id": "column_0",
+            "label": "id",
+            "name": "id"
+        },
+        {
+            "id": "column_1",
+            "label": "name",
+            "name": "name"
+        },
+        {
+            "id": "column_2",
+            "label": "version",
+            "name": "version"
+        }
+    ],
+    "filters": [],
+    "id": "list_json1",
+    "name": "List - App Details Form",
+    "order": "",
+    "orderBy": "",
+    "pageSize": 0,
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}

@@ -1,0 +1,240 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "group",
+                            "label": "Group",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "copyCookies": "",
+                                    "debugMode": "",
+                                    "groupingColumn": "",
+                                    "headers": [],
+                                    "idColumn": "data.id",
+                                    "jsonUrl": "#form.j_json_auth.baseURL[1]#json/directory/admin/group/list?j_username=#form.j_json_auth.j_username[1]#&j_password=#form.j_json_auth.j_password[1]#",
+                                    "labelColumn": "data.name",
+                                    "multirowBaseObject": "data",
+                                    "requestType": "",
+                                    "useAjax": ""
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "group",
+                            "id": "username",
+                            "label": "Username",
+                            "multiple": "true",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "copyCookies": "",
+                                    "debugMode": "",
+                                    "groupingColumn": "",
+                                    "headers": [],
+                                    "idColumn": "data.id",
+                                    "jsonUrl": "#form.j_json_auth.baseURL[1]#json/directory/admin/user/list?groupId=G-001&j_username=#form.j_json_auth.j_password[1]#&j_password=#form.j_json_auth.j_username[1]#",
+                                    "labelColumn": "data.username",
+                                    "multirowBaseObject": "data",
+                                    "requestType": "",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "label": "Groups & Users Directory (Using Joget JSON API)",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "organization",
+                            "label": "Organization",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "copyCookies": "",
+                                    "debugMode": "",
+                                    "groupingColumn": "",
+                                    "headers": [],
+                                    "idColumn": "data.id",
+                                    "jsonUrl": "#form.j_json_auth.baseURL[1]#json/directory/admin/organization/list?j_username=#form.j_json_auth.j_username[1]#&j_password=#form.j_json_auth.j_password[1]#",
+                                    "labelColumn": "data.name",
+                                    "multirowBaseObject": "data",
+                                    "requestType": "",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "organization",
+                            "id": "dept",
+                            "label": "Department",
+                            "multiple": "true",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                "properties": {
+                                    "addEmptyOption": "",
+                                    "cacheInterval": "",
+                                    "copyCookies": "",
+                                    "debugMode": "",
+                                    "groupingColumn": "",
+                                    "headers": [],
+                                    "idColumn": "data.id",
+                                    "jsonUrl": "#form.j_json_auth.baseURL[1]#json/directory/admin/dept/list?orgId=ORG-001&j_username=#form.j_json_auth.j_username[1]#&j_password=#form.j_json_auth.j_password[1]#",
+                                    "labelColumn": "data.name",
+                                    "multirowBaseObject": "data",
+                                    "requestType": "",
+                                    "useAjax": "true"
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "5",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field5",
+                            "label": "&nbsp;",
+                            "value": "<br/>\nView the full list of <a href=\"https://dev.joget.org/community/display/DX8/JSON+API\" target=\"_blank\">Joget JSON API<\/a>.\n\n<style>\n    #submit, #cancel { display:none!important; }\n<\/style>"
+                        }
+                    }
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section2",
+                "label": "Organization & Departments Directory (Using Joget JSON API)",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "jogetJSON",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Joget JSON API Directory Calls",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_json_joget"
+    }
+}

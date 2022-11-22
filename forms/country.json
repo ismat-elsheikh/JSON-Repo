@@ -1,0 +1,220 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "region",
+                        "label": "Region",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Africa",
+                                "value": "Africa"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Americas",
+                                "value": "Americas"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Asia",
+                                "value": "Asia"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Europe",
+                                "value": "Europe"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Oceania",
+                                "value": "Oceania"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "Americas",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "country1",
+                        "label": "Select Box Example",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "copyCookies": "",
+                                "debugMode": "",
+                                "groupingColumn": "",
+                                "headers": [],
+                                "idColumn": "response.name",
+                                "jsonUrl": "https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json",
+                                "labelColumn": "response.name",
+                                "multirowBaseObject": "response",
+                                "requestType": "",
+                                "useAjax": "true"
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "country2",
+                        "label": "Check Box Example",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "copyCookies": "",
+                                "debugMode": "",
+                                "groupingColumn": "",
+                                "headers": [],
+                                "idColumn": "response.name",
+                                "jsonUrl": "https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json",
+                                "labelColumn": "response.name",
+                                "multirowBaseObject": "response",
+                                "requestType": "",
+                                "useAjax": "true"
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "country3",
+                        "label": "Radio Example",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "",
+                                "cacheInterval": "",
+                                "copyCookies": "",
+                                "debugMode": "",
+                                "groupingColumn": "",
+                                "headers": [],
+                                "idColumn": "response.name",
+                                "jsonUrl": "https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json",
+                                "labelColumn": "response.name",
+                                "multirowBaseObject": "response",
+                                "requestType": "",
+                                "useAjax": "true"
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field3",
+                        "label": "&nbsp;",
+                        "value": "<br/>\n<i>Note: Depending on your internet speed, this JSON Form Option will \ntake a few seconds to populate from https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json.<\/i>\n<style>\n    #submit, #cancel { display:none!important; }\n<\/style>"
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "label": "JSON Form Options Examples: Country",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "country",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Country",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_json_country"
+    }
+}

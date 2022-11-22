@@ -1,0 +1,48 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.JsonApiDatalistBinder",
+        "properties": {
+            "copyCookies": "true",
+            "debugMode": "",
+            "handlePaging": "true",
+            "headers": [],
+            "jsonUrl": "https://gist.githubusercontent.com/keeguon/2310008/raw/bdc2ce1c1e3f28f9cab5b4393c7549f38361be4e/countries.json",
+            "multirowBaseObject": "response",
+            "primaryKey": "response.name",
+            "requestType": "",
+            "totalRowCountObject": ""
+        }
+    },
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "name",
+            "name": "name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "code",
+            "name": "code",
+            "sortable": "false"
+        }
+    ],
+    "description": "",
+    "filters": [],
+    "id": "jsonLoadedList1",
+    "name": "List Populated using Countries JSON URL ",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "template": {
+        "className": "",
+        "properties": {}
+    }
+}

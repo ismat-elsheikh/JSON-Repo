@@ -1,0 +1,461 @@
+{
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "content": "<p><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 16px;\">NOTICE (Please follow these instructions before using the app)<\/span><\/strong><\/em><\/span><\/p>\n<ol>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">In System Settings &gt; General Settings, add an asterisk (*) in \"API IP Whitelist (Separated by ';')\" field to allow the example JSON calls to work.<\/span><\/strong><\/em><\/span><\/li>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">Before testing the JSON calls, do <a href=\"#request.baseURL#/web/userview/jsonfob/testUserview/_/sa\">setup<\/a> your admin username,&nbsp;password &amp; base URL that is needed for Joget Workflow's <a href=\"https://dev.joget.org/community/display/DX8/JSON+API\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #ff0000;\">JSON API<\/a> authentication.<\/span><\/strong><\/em><\/span><\/li>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">To be able to view the List of Published UIs properly, please <a href=\"#request.baseURL#/web/userview/jsonfob/testUserview/_/r\">Run this Process<\/a> First<\/span><\/strong><\/em><\/span><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\"><\/span><\/strong><\/em><\/span><\/li>\n<\/ol>\n<p><span style=\"color: #ff0000;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">A free app demonstrating the use of the JSON API for Loading/Selection Options, Loading to Lists and as a Process Tool to pull and populate the following information:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">Country Names<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Joget DX JSON API Directory Calls<\/span><span style=\"font-size: 12pt;\"><\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Loading/Selecting Option will perform a GET JSON to populate the following form elements:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">Select Box<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Check Box<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Radio<\/span><span style=\"font-size: 12pt;\"><\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Loading to Lists will perform a GET call to populate a List with data from a JSON URL (in this case a Joget DX JSON API Directory Call)<\/span><\/p>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Processes will perform a POST call to populate a JSON URL with data from:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">A Custom JSON payload with data obtained from a form<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Records obtained through a <a href=\"https://dev.joget.org/community/pages/viewpage.action?spaceKey=DX8&amp;title=JSON+API#JSONAPI-web/json/apps/published/userviews\">Joget JSON API Directory Call.<\/a> (Published UIs)<\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">JSON (JavaScript Object Notation) is a lightweight data-interchange format. This option binder allows you to define the target URL to GET or pull data using the JSON API protocol.<\/span><\/p>",
+                        "customId": "w",
+                        "enableOffline": "",
+                        "id": "F4292FD7878B4714ADDB0FEE27B51148",
+                        "label": "Welcome",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "sa",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "setupAuthentication",
+                        "id": "8F80ED2852D841ECACD87874D7E664B2",
+                        "keyName": "",
+                        "label": "Setup",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectUrlAfterComplete": "w",
+                        "redirectUrlOnCancel": "w",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "afterSavedReloadTarget": "true",
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "jsonBinder",
+                        "id": "78E35891E66449C5A83F4F73F8652CCF",
+                        "keyName": "",
+                        "label": "Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "true",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "id": "31FFBE07FDBB42D96D91873220A1A746",
+                        "keyName": "",
+                        "label": "Run Process",
+                        "messageShowAfterComplete": "",
+                        "processDefId": "process3",
+                        "redirectTarget": "",
+                        "redirectUrlAfterComplete": "",
+                        "runProcessDirectly": "Yes",
+                        "runProcessSubmitLabel": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-E0B07FAA100A4501B77B2B6C2D13DA25",
+                "label": "Setup and Notice ",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "cj",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "country",
+                        "id": "7E7338EB4055442FB69373A96C5A911E",
+                        "keyName": "",
+                        "label": "Country JSON",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "jjf1",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "jogetJSON",
+                        "id": "777D521E8F3D41ED818B09AC3475A68E",
+                        "keyName": "",
+                        "label": "Joget JSON API Directory Calls",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-9bb3640b-c0a8106f-118d3dc0-c1c9e55d",
+                "label": "JSON API for Loading/Selection Options",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "r",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "id": "36889DCB38D0408D187416698F4365B6",
+                        "keyName": "",
+                        "label": "Run Process JSON UIs API",
+                        "messageShowAfterComplete": "",
+                        "processDefId": "process1",
+                        "redirectTarget": "",
+                        "redirectUrlAfterComplete": "m",
+                        "runProcessDirectly": "Yes",
+                        "runProcessSubmitLabel": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "add-afterSaved": "list",
+                        "add-afterSavedReloadTarget": "true",
+                        "add-cancelButtonLabel": "",
+                        "add-customFooter": "",
+                        "add-customHeader": "",
+                        "add-messageShowAfterComplete": "",
+                        "add-saveButtonLabel": "",
+                        "addFormId": "",
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "checkboxPosition": "left",
+                        "customId": "m",
+                        "datalistId": "list_json1",
+                        "edit-afterSaved": "list",
+                        "edit-afterSavedReloadTarget": "true",
+                        "edit-allowRecordTraveling": "",
+                        "edit-backButtonLabel": "",
+                        "edit-customFooter": "",
+                        "edit-customHeader": "",
+                        "edit-firstButtonLabel": "",
+                        "edit-lastButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "edit-moreActions": [],
+                        "edit-nextButtonLabel": "",
+                        "edit-prevButtonLabel": "",
+                        "edit-readonly": "",
+                        "edit-readonlyLabel": "true",
+                        "edit-saveButtonLabel": "",
+                        "editFormId": "json1",
+                        "enableOffline": "",
+                        "id": "E1FB12D793EC43EA00E2AB7EA6F48005",
+                        "keyName": "",
+                        "label": "View Published Apps Records obtained through JSON",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "list-editLinkLabel": "",
+                        "list-editLinkTarget": "",
+                        "list-moreActions": [],
+                        "list-newButtonLabel": "",
+                        "list-newLinkTarget": "",
+                        "list-showDeleteButton": "",
+                        "rowCount": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "actionAfterSaved": "",
+                        "actionOnCancel": "",
+                        "afterSavedReloadTarget": "true",
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "enableOffline": "",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "json_payload",
+                        "id": "1F3B8EA846E24516EC35B704DEC6AE6C",
+                        "keyName": "",
+                        "label": "Custom JSON Payload Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectTargetOnComplete": "",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-63565E70C48F4552EF561B275E6053A5",
+                "label": "JSON API as a Process Tool ",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "checkboxPosition": "left",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "",
+                    "datalistId": "jsonLoadedList1",
+                    "enableOffline": "",
+                    "id": "5B21832D70954E183AE4EAC103403EB6",
+                    "keyName": "",
+                    "label": "Lists Populated using JSON API",
+                    "rowCount": "",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "comment": "",
+                "hide": "",
+                "id": "category-56F4DA6C603A4F54E45DFC69250C184C",
+                "label": "JSON API for Loading to Lists ",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "content": "<p><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 16px;\">NOTICE (Please follow these instructions before using the app)<\/span><\/strong><\/em><\/span><\/p>\n<ol>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">In System Settings &gt; General Settings, add an asterisk (*) in \"API IP Whitelist (Separated by ';')\" field to allow the example JSON calls to work.<\/span><\/strong><\/em><\/span><\/li>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">Before testing the JSON calls, do <a href=\"#request.baseURL#/web/userview/jsonfob/testUserview/_/sa\">setup<\/a> your admin username,&nbsp;password &amp; base URL that is needed for Joget Workflow's <a href=\"https://dev.joget.org/community/display/DX8/JSON+API\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #ff0000;\">JSON API<\/a> authentication.<\/span><\/strong><\/em><\/span><\/li>\n<li><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\">To be able to view the List of Published UIs properly, please <a href=\"#request.baseURL#/web/userview/jsonfob/testUserview/_/r\">Run this Process<\/a> First<\/span><\/strong><\/em><\/span><span style=\"color: #ff0000;\"><em><strong><span style=\"font-size: 12pt;\"><\/span><\/strong><\/em><\/span><\/li>\n<\/ol>\n<p><span style=\"color: #ff0000;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">A free app demonstrating the use of the JSON API for Loading/Selection Options, Loading to Lists and as a Process Tool to pull and populate the following information:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">Country Names<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Joget DX JSON API Directory Calls<\/span><span style=\"font-size: 12pt;\"><\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Loading/Selecting Option will perform a GET JSON to populate the following form elements:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">Select Box<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Check Box<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Radio<\/span><span style=\"font-size: 12pt;\"><\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Loading to Lists will perform a GET call to populate a List with data from a JSON URL (in this case a Joget DX JSON API Directory Call)<\/span><\/p>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">The JSON API for Processes will perform a POST call to populate a JSON URL with data from:<\/span><\/p>\n<ul>\n<li><span style=\"font-size: 12pt;\">A Custom JSON payload with data obtained from a form<\/span><\/li>\n<li><span style=\"font-size: 12pt;\">Records obtained through a <a href=\"https://dev.joget.org/community/pages/viewpage.action?spaceKey=DX8&amp;title=JSON+API#JSONAPI-web/json/apps/published/userviews\">Joget JSON API Directory Call.<\/a> (Published UIs)<\/span><\/li>\n<\/ul>\n<p><span style=\"font-size: 12pt;\"><\/span><\/p>\n<p><span style=\"font-size: 12pt;\">JSON (JavaScript Object Notation) is a lightweight data-interchange format. This option binder allows you to define the target URL to GET or pull data using the JSON API protocol.<\/span><\/p>",
+                        "customId": "about",
+                        "enableOffline": "",
+                        "id": "A648E874EE6C48E886B5B73391CE5F27",
+                        "label": "About",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "content": "<div style=\"font-size: 24px; font-weight: bold; font-family: inherit;\">#envVariable.AppName# License<\/div>\n<hr size=\"1\" />\n<p><\/p>\n<pre style=\"display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 20px; word-break: break-all; word-wrap: break-word; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid rgba(0,0,0,0.15); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font-family: Monaco,Menlo,Consolas,Courier New,monospace;\">Copyright #date.yyyy# Joget, Inc.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\" rel=\"noopener noreferrer\">http://www.apache.org/licenses/LICENSE-2.0\n<\/a>\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.<\/pre>",
+                        "customId": "apli",
+                        "id": "ED97AA683898465885BC68FBC4DECDBD",
+                        "label": "App License",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "id": "category-6E0181191EB14F64A1714F65CB33E4D7",
+                "label": "<i class=\"icon-info-sign\"><\/i> Info",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "<a href=\"http://www.joget.com/\" target=\"_blank\">Powered by Joget<\/a>",
+        "id": "testUserview",
+        "logoutText": "Logout",
+        "name": "#envVariable.AppName#",
+        "welcomeMessage": ""
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "tempDisablePermissionChecking": "",
+        "theme": {
+            "className": "org.joget.apps.userview.lib.AjaxUniversalTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "GREY",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "disablePush": "",
+                "disablePwa": "",
+                "dx8background": "",
+                "dx8backgroundImage": "",
+                "dx8buttonBackground": "",
+                "dx8buttonColor": "",
+                "dx8colorScheme": "rgb(249, 250, 251);rgb(59, 67, 72);rgb(3, 169, 244);rgb(110, 206, 251);rgb(255, 255, 255);rgb(255, 255, 255)",
+                "dx8contentFontColor": "",
+                "dx8contentbackground": "",
+                "dx8fontColor": "",
+                "dx8footerBackground": "",
+                "dx8footerColor": "",
+                "dx8headerColor": "",
+                "dx8headerFontColor": "",
+                "dx8headingBgColor": "",
+                "dx8headingFontColor": "",
+                "dx8linkActiveColor": "",
+                "dx8linkColor": "",
+                "dx8navActiveIconColor": "",
+                "dx8navActiveLinkBackground": "",
+                "dx8navActiveLinkColor": "",
+                "dx8navBackground": "",
+                "dx8navBadge": "",
+                "dx8navBadgeText": "",
+                "dx8navLinkBackground": "",
+                "dx8navLinkColor": "",
+                "dx8navLinkIcon": "",
+                "dx8navScrollbarThumb": "",
+                "dx8primaryColor": "",
+                "enableResponsiveSwitch": "true",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "fontControl": "",
+                "homeAttractBanner": "",
+                "homeUrl": "",
+                "horizontal_menu": "",
+                "inbox": "current",
+                "js": "",
+                "loginBackground": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "DARKROYALBLUE",
+                "profile": "",
+                "removeAssignmentTitle": "",
+                "shortcut": [],
+                "shortcutLinkLabel": "Shortcut",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "urlsToCache": "",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userviewId": "testUserview",
+        "userviewName": "#envVariable.AppName#",
+        "userview_category": "",
+        "userview_thumbnail": ""
+    }}
+}

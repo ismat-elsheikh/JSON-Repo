@@ -1,0 +1,147 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.JsonApiDatalistBinder",
+        "properties": {
+            "copyCookies": "true",
+            "debugMode": "",
+            "handlePaging": "true",
+            "headers": [],
+            "jsonUrl": "http://localhost:8080/jw/web/json/directory/admin/user/list",
+            "multirowBaseObject": "data",
+            "primaryKey": "id",
+            "requestType": "",
+            "totalRowCountObject": ""
+        }
+    },
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "User ID",
+            "name": "id",
+            "renderHtml": "",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "First Name",
+            "name": "firstName",
+            "renderHtml": "",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "Last Name",
+            "name": "lastName",
+            "renderHtml": "",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "Username",
+            "name": "username",
+            "renderHtml": "",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "Active Status",
+            "name": "active",
+            "renderHtml": "",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "description": "",
+    "filters": [],
+    "id": "jsonLoadedList2",
+    "name": "List Populated using Joget JSON API Directory Call",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "template": {
+        "className": "",
+        "properties": {}
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "elements": [
+        {"className": "menu-component"},
+        {
+            "className": "org.joget.apps.userview.lib.HtmlPage",
+            "properties": {
+                "content": "<p style=\"text-align: left;\"><span style=\"font-size: 12pt;\">This form is an example of how to POST data retrieved from a Joget Form to your own JSON URL.<\/span><\/p>\n<p style=\"text-align: left;\"><br /><span style=\"font-size: 12pt;\">In this example, we used <a href=\"https://hookbin.com\">https://hookbin.com<\/a> to generate a JSON URL. It is recommended for your JSON URL to be in HTTPS. <\/span><br /><span style=\"font-size: 12pt;\">After creating an endpoint in hookbin, paste the endpoint link in the custom JSON Payload process.<\/span><\/p>",
+                "customId": "",
+                "enableOffline": "",
+                "id": "EF93C559B9514701B99ED84138838F03",
+                "label": "Rich Text",
+                "userviewCacheDuration": "20",
+                "userviewCacheScope": ""
+            }
+        }
+    ],
+    "properties": {"id": "up-1F3B8EA846E24516EC35B704DEC6AE6C"}
+}
