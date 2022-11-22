@@ -37,13 +37,25 @@
                         "storeNumeric": "False",
                         "style": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "false",
+                        "id": "field3",
+                        "label": "Text Field",
+                        "readonly": "False",
+                        "readonlyLabel": "False",
+                        "storeNumeric": "False",
+                        "style": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
         }],
         "properties": {
             "id": "section1",
-            "label": "testing git without pull"
+            "label": "testing git"
         }
     }],
     "properties": {
